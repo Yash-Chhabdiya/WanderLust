@@ -14,7 +14,7 @@ const { index, renderNewForm, showListing, createListing, renderEditForm, destro
 
 router.get("/new",isLoggedIn,renderNewForm)  
 
-
+router.post("/search",wrapAsync(SEARCH))
 router.route("/")
 .get(wrapAsync(index) )
 .post(isLoggedIn,upload.single('listing[image]'),validateListing,wrapAsync(createListing)) 
