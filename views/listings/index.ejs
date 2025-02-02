@@ -126,31 +126,6 @@
 
     </div>
     <script>
-      const filters = document.getElementById("filters");
-      let scrollPosition = 0;
-      const scrollAmount = 150;
-    
-      document.querySelector(".scroll-left").addEventListener("click", () => {
-        scrollPosition = Math.max(scrollPosition - scrollAmount, 0);
-        filters.style.transform = `translateX(-${scrollPosition}px)`;
-      });
-    
-      document.querySelector(".scroll-right").addEventListener("click", () => {
-        const maxScroll = filters.scrollWidth - filters.clientWidth;
-        scrollPosition = Math.min(scrollPosition + scrollAmount, maxScroll);
-        filters.style.transform = `translateX(-${scrollPosition}px)`;
-      });
-    
-      // GST Toggle Functionality
-      let taxSwitch = document.getElementById("flexSwitchCheckDefault");
-      taxSwitch.addEventListener("click", () => {
-        let taxInfo = document.getElementsByClassName("tax-info");
-        for (info of taxInfo) {
-          info.style.display = info.style.display !== "inline" ? "inline" : "none";
-        }
-      });
-    </script>
-<!-- <script>
   let taxSwitch = document.getElementById("flexSwitchCheckDefault");
   taxSwitch.addEventListener("click",()=>{
     let taxInfo = document.getElementsByClassName("tax-info")
@@ -165,4 +140,4 @@
   })
   
 
-</script> -->
+</script>
