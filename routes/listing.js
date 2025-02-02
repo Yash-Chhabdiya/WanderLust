@@ -9,7 +9,7 @@ const upload = multer({ storage})
 const {listingSchema,reviewSchema} = require("../schema.js");
 const ExpressError = require("../utils/ExpressError.js");
 const {isLoggedIn, isOwner,validateListing} = require("../middleware.js");
-const { index, renderNewForm, showListing, createListing, renderEditForm, destroyListing, updateListing } = require("../controllers/listings.js");
+const { index, renderNewForm, showListing, createListing, renderEditForm, destroyListing, updateListing ,SEARCH} = require("../controllers/listings.js");
 
 
 router.get("/new",isLoggedIn,renderNewForm)  
