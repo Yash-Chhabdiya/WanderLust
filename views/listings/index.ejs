@@ -14,6 +14,9 @@
   align-items: center;
   position: relative;
 }
+.tax-info{
+display:none;
+}
 
 /* Wrapper to hold filters and enable sliding */
 #filters-wrapper {
@@ -102,7 +105,7 @@
 
   <div class="tax-toggle" >
     <div class="form-check-reverse form-switch">
-      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+      <input class="form-check-input taxP" type="checkbox" id="flexSwitchCheckDefault">
       <label class="form-check-label" for="flexSwitchCheckDefault">Incl GST%</label>
     </div>
   </div>
@@ -126,7 +129,7 @@
 
     </div>
     <script>
-  let taxSwitch = document.getElementById("flexSwitchCheckDefault");
+  let taxSwitch = document.getElementByClassName("tax-toggle");
   taxSwitch.addEventListener("click",()=>{
     let taxInfo = document.getElementsByClassName("tax-info")
   for(info of taxInfo){
