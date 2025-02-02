@@ -129,11 +129,12 @@ display:none;
 
     </div>
     <script>
-  let taxSwitch = document.getElementByClassName("tax-toggle");
-  taxSwitch.addEventListener("click",()=>{
-    let taxInfo = document.getElementsByClassName("tax-info")
-  for(info of taxInfo){
-   if(info.style.display!="inline"){
+  let taxs = document.getElementById("flexSwitchCheckDefault");
+  taxs.addEventListener("click",()=>{
+console.log("hello");
+    let taxI = document.getElementsByClassName("tax-info")
+  for(info of taxI){
+   if(info.style.display!=="inline"){
     info.style.display = "inline";
    } 
    else{
