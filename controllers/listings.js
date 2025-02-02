@@ -9,7 +9,17 @@ module.exports.index =async (req,res)=>{
     const allListing = await Listing.find({});
     res.render("listings/index.ejs",{allListing}); 
 };
+module.exports.SEARCH =async (req,res)=>{
+    let{city} = req.body;
+    const allListing = await Listing.find({
+        $or: [
+            { location: { $regex: city, $options: "i" } }, // Case-insensitive match for location
+            { country: { $regex: city, $options: "i" } }   // Case-insensitive match for country
+        ]
+    });
 
+    res.render("listings/index.ejs", { allListing }); 
+};
 module.exports.renderNewForm =(req,res)=>{
     if(!req.isAuthenticated()){
         req.flash("error","you must be Logged In to create listing!");
