@@ -7,67 +7,74 @@ body{
     flex-direction: column;
     min-height: 100vh;
 
-    background-color: #FFF8E6;   /* Cream Background */
+    background-color: #FFF8E6;   /* Cream background */
 }
 
 .container{
     flex:1
 }
 
+/* Navbar Brown */
 .navbar{
     height: 5rem; 
-    background: #FFF8E6;   /* Cream */
+    background: #835218;
 }
 
+/* Navbar text white */
+.nav-link{
+    background-color: #835218 !important;
+    color: #ffffff !important;
+}
+
+.nav-link:hover{
+    color: #309AA8 !important;
+}
+
+/* Compass icon */
 .fa-compass{
-    color: #309AA8;   /* Bird Blue */
+    color: #ffffff;
     font-size: 2rem;
 }
 
-.nav-link{
-    background-color: #FFF8E6 !important;
-    color: #222222 !important;
+/* Footer Brown */
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #835218;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    color: white;
 }
 
 .f-info-links a{
     text-decoration: none;
-    color: #222222;
+    color: #ffffff;
 }
 
 .f-info-links a:hover{
-    text-decoration: underline;
-}
-
-.f-info-links,
-.f-info-socials,
-.f-info-brand{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #309AA8;
 }
 
 .f-info-socials i{
     font-size: 1.25rem;
     margin-right: 1rem;
+    color: white;
 }
 
-.f-info{
-    text-align: center;
-    height: 8rem;
-    background-color: #F4EEDB;   /* Slightly darker cream for footer */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-evenly;
+.f-info-socials i:hover{
+    color: #309AA8;
 }
 
-/* cards */
+/* Listing background cream */
 .listing-card{
     border:none !important;
     margin-bottom: 2rem;
+    background-color: #FFF8E6;
 }
 
+/* Cards */
 .card-img-top{
     border-radius: 1REM;
     width: 100%;
@@ -86,7 +93,7 @@ body{
     text-decoration: none;
 }
 
-/* card effect */
+/* Card effect */
 .card-img-overlay{
     opacity: 0;
 }
@@ -96,17 +103,21 @@ body{
     background-color: white;
 }
 
-.add-btn{
-    background-color: #309AA8 !important;  /* Blue */
+/* ALL Buttons Blue */
+.add-btn,
+.edit-btn,
+.btn,
+button{
+    background-color: #309AA8 !important;
     border: none !important;
-    color: white;
+    color: white !important;
 }
 
-/* edit page */
-.edit-btn{
-    background-color: #309AA8 !important;  /* Blue */
-    border: none !important;
-    color: white;
+.add-btn:hover,
+.edit-btn:hover,
+.btn:hover,
+button:hover{
+    background-color: #267F8B !important;
 }
 
 /* show page */
