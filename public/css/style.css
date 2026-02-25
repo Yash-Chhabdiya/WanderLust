@@ -133,6 +133,9 @@ button:hover{
     padding-left: 0;
     padding-right: 0;
 }
+.card {
+    background-color: #FFF8E6 !important;
+}
 
 #map {
     height: 350px;
