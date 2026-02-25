@@ -136,6 +136,12 @@ button:hover{
 .card {
     background-color: #FFF8E6 !important;
 }
+.container {
+    background-color: #FFF8E6 !important;
+}
+body {
+    background-color: #FFF8E6 !important;
+}
 
 #map {
     height: 350px;
